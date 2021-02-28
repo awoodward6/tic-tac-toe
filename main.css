@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    font-size: 8vmin;
+    margin: 0 0 0 100px;
+
+}
+
+/*viewport units allows us to specifiy the fraction/percentage of the window. 
+vh (height) vw(width) vmin (smaller of the two) */
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Didot', 'sans-serif';
+}
+
+#message {
+    text-align: center;
+    font-size: 3vmin;
+    margin: 0 0 0 13vmin;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    gap: 1vmin;
+    margin: 0 0 0 13vmin;
+}
+
+#board > div {
+    display: grid;
+    height: 10vmin;
+    position: 0 0 0 0;
+    border-width: 5vmin;
+    border-style: solid;
+    color: lightblue; 
+}
+
+#reset {
+    /*position: absolute;*/
+    margin: 0 0 -30% -13%;
+    font-family: 'Didot', 'sans-serif';
+}
+
+#reset:hover {
+    background-color: lightblue;
+}
+
