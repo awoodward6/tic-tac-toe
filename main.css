@@ -1,15 +1,12 @@
 * {
     box-sizing: border-box;
 }
+
 header {
     text-align: center;
     font-size: 8vmin;
     margin: 0 0 0 100px;
-
 }
-
-/*viewport units allows us to specifiy the fraction/percentage of the window. 
-vh (height) vw(width) vmin (smaller of the two) */
 
 body {
     height: 100vh;
@@ -27,24 +24,23 @@ body {
 
 #board {
     display: grid;
-    grid-template-columns: repeat(3, 10vmin);
+    grid-template-columns: repeat(3, 10vmin); 
     grid-template-rows: repeat(3, 10vmin);
     gap: 1vmin;
     margin: 0 0 0 13vmin;
+    /*justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;*/ 
 }
 
-#board > div {
-    display: grid;
-    height: 10vmin;
-    position: 0 0 0 0;
-    border-width: 5vmin;
-    border-style: solid;
-    color: lightblue; 
+*#board > div {
+    background-color: lightblue;
+    background-size: contain;
 }
 
 #reset {
-    /*position: absolute;*/
-    margin: 0 0 -30% -13%;
+    margin: 0 0 0 10vmin;
     font-family: 'Didot', 'sans-serif';
 }
 
